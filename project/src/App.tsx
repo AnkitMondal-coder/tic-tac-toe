@@ -57,8 +57,10 @@ function App() {
     <div className={`
       min-h-screen transition-all duration-500
       ${theme === 'dark' 
-        ? 'bg-gradient-to-br from-gray-900 via-purple-900 to-violet-900' 
-        : 'bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500'
+        //? 'bg-gradient-to-br from-gray-900 via-purple-900 to-violet-900' 
+        ? 'bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-500'
+        // : 'bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500'
+        : 'bg-gradient-to-br from-emerald-400 via-teal-400 to-cyan-500'
       }
     `}>
       <ThemeToggle theme={theme} onToggle={toggleTheme} />
@@ -69,11 +71,11 @@ function App() {
             <div className="p-3 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
               <Gamepad2 size={32} className="text-white" />
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white drop-shadow-lg">
+            <h1 className="text-4xl md:text-5xl font-bold text-black drop-shadow-lg">
               Tic-Tac-Toe
             </h1>
           </div>
-          <p className="text-white/90 text-lg font-medium">
+          <p className="text-black/90 text-lg font-medium">
             Modern cross-zero game with advanced AI
           </p>
         </div>
